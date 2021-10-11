@@ -1,6 +1,7 @@
 [Home](https://ddtrades.github.io/autotrade/)
 
 ### Install Anaconda python package
+[Previous](https://ddtrades.github.io/autotrade/install_setup)
 
 Double-click on the Anaconda package that you have downloaded and follow the step-by-step instructions as shown below:
 
@@ -40,4 +41,4 @@ Screen 8
 Screen 9
 ![Step 9](https://ddtrades.github.io/autotrade/img/a-9.jpg)
 
-[Home](https://ddtrades.github.io/autotrade/) `algotradealgotradealgotradealgotrade` [Previous](https://ddtrades.github.io/autotrade/install_setup) `algotradealgotradealgotradealgotrade` [Next](https://ddtrades.github.io/autotrade/config_anaconda)
+[Next](https://ddtrades.github.io/autotrade/config_anaconda)

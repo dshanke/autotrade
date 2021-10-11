@@ -1,4 +1,7 @@
+[Home](https://ddtrades.github.io/autotrade/)
+
 ### Install Pycharm
+[Previous](https://ddtrades.github.io/autotrade/config_anaconda)
 
 Double-click on the Pycharm package that you have downloaded and follow the step-by-step instructions as shown below:
 
@@ -29,4 +32,4 @@ Screen 6
 ![](https://ddtrades.github.io/autotrade/img/p-6.jpg)
 
 
-[Home](https://ddtrades.github.io/autotrade/) `algotradealgotradealgotradealgotrade` [Previous](https://ddtrades.github.io/autotrade/config_anaconda) `algotradealgotradealgotradealgotrade` [Next](https://ddtrades.github.io/autotrade/config_pycharm)
+[Next](https://ddtrades.github.io/autotrade/config_pycharm)

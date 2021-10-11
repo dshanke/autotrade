@@ -1,5 +1,8 @@
 
+[Home](https://ddtrades.github.io/autotrade/)
+
 ### First Python Program
+[Previous](https://ddtrades.github.io/autotrade/config_pycharm)
 
 ---
 Close PyCharm
