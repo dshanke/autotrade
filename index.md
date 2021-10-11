@@ -191,6 +191,18 @@ Name the file `lesson1.py`
 
 ![](https://ddtrades.github.io/autotrade/img/pr-8.jpg)
 
+Type following in the file and save the file:
+
+```
+print("hello traders")
+```
+
+Right Click anywhere in the file, and select `Run 'lesson1'`
+
+Doing this will execute the python program. This program prints `Hello TRADERS!` on output terminal as shown in image.
+
+![](https://ddtrades.github.io/autotrade/img/pr-8.jpg)
+
 
 
 
