@@ -4,7 +4,11 @@
 ## Agenda
 
 * Install & Setup
+  * Anaconda
+  * Pycharm
 * First Python Program
+* Python Concepts - Quick Insights
+* Configure backtrader python library
 * Get Data From Yahoo Finance
 * Backtest AAPL share trading using Yahoo Finance Data
 * Connect to IBKR TWS workstation
