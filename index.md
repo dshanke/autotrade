@@ -111,6 +111,13 @@ If Windows prompt you asking 'Do you want to allow this app to make changes to y
 
 
 
+### Configure & Setup Pycharm with Anaconda
+
+From your desktop Double-click on Pycharm shortcut to launch the Pycharm application.
+
+---
+
+
 
 
 
