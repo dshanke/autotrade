@@ -25,6 +25,7 @@ This will open up the python console which looks like shown below:
 
 
 * Comments in python
+
 ```
 # if line starts with # it is a single line comment
 
@@ -37,6 +38,7 @@ this is line 3
 ```
 
 * Math Operations:
+
 ```
 #addition
 print(10 + 20)
@@ -57,6 +59,7 @@ print(10 + 20)
 
 * Variable: Let's remember our school days - where algebra was either the most interesting subject or the most hated subject. But we all might remember defining the unknown as 'x'.
   `x` & `y` are example of variable. We can use any alphanumeric characters as a variable & we save values in it.
+
 ```
 x=10
 print(x)
@@ -76,6 +79,7 @@ print(first_name + " " + last_name)
 ```
 
 * list and how to access a specific entry in the list?
+
 ```
 #list of numbers
 a = [1, 2, 3, 4, 5,]
@@ -102,6 +106,7 @@ print(d)
 ```
 
 * Dictionary - a list of key-value pair
+
 ```
 #a dictionary with one key-value pair
 a = { "name": "jack"}
@@ -116,6 +121,7 @@ print(a["address"])
 ```
 
 * How to print all values in list one at a time
+
 ```
 c = [ 10.25, 65.81, 45.23, 9.07]
 for number in c:
@@ -140,6 +146,7 @@ for number in c:
   * Anybody who has access to the library can borrow a book, read the book and then return it back to the library
   * If a book already exist then you do not need to write the exactly same thing
 function is similar in nature. Once a programmer writes a function, he can use the function any number of times as long he has access to that function.
+
 ```
 def print_hello():
     print("hello")
@@ -167,6 +174,7 @@ print(x)
 
 * Conditional Statement
 Human's by nature are logical thinkers. An example of logical think is:
+
 ```
 If Traffic Light is showing Red, STOP
 Else If Traffic Light is showing Green, GO
