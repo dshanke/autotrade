@@ -77,6 +77,26 @@ Wait for the creation to complete and then close it
 ![](https://ddtrades.github.io/autotrade/img/an-5.jpg)
 
 
+### Install Pycharm
+
+Double-click on the Pycharm package that you have downloaded and follow the step-by-step instructions as shown below:
+
+![](https://ddtrades.github.io/autotrade/img/p-1.jpg)
+
+If Windows prompt you asking 'Do you want to allow this app to make changes to your device?' click Yes and proceed.
+
+![](https://ddtrades.github.io/autotrade/img/p-2.jpg)
+
+![](https://ddtrades.github.io/autotrade/img/p-3.jpg)
+
+![](https://ddtrades.github.io/autotrade/img/p-4.jpg)
+
+![](https://ddtrades.github.io/autotrade/img/p-5.jpg)
+
+![](https://ddtrades.github.io/autotrade/img/p-6.jpg)
+
+
+
 
 
 
