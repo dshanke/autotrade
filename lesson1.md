@@ -195,7 +195,7 @@ for number in c:
 #if you mess up indentation you can mess up the program pretty bad
 ```
 
-* funtion in python 
+* function in python 
   * Think of it as a book library. 
   * Anybody who has access to the library can borrow a book, read the book and then return it back to the library
   * If a book already exist then you do not need to write the exactly same thing
@@ -211,20 +211,25 @@ print_hello()
 
 * Conditional Statement
 Human's by nature are logical thinkers. An example of logical think is:
+```
 If Traffic Light is showing Red, STOP
 Else If Traffic Light is showing Green, GO
 Else If Traffic Light is showing Orange Start Stopping.
-```
-# If it was a self driving car then the program that would run inside the car would be similar in nature
-# using a variable which tells you the current color of the signal
 
+```
+
+If it was a self driving car then the program that would run inside the car would be similar in nature
+using a variable which tells you the current color of the signal
+
+```
+#let's write a function which tell us what to do
 def what_should_i_do(color):
   if color == "green":
-     print("go")
+    print("go")
   else if color == "red":
-     print("stop")
+    print("stop")
   else if color == "orange":
-     print("prepare to stop")
+    print("prepare to stop")
 
 what_should_i_do("green")
 
