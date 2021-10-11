@@ -142,6 +142,55 @@ Screen 6
 From your desktop Double-click on Pycharm shortcut to launch the Pycharm application.
 
 ---
+![](https://ddtrades.github.io/autotrade/img/py-0.jpg)
+
+---
+If prompted with below dialogue select 'Do not import settings' and press Next.
+
+![](https://ddtrades.github.io/autotrade/img/py-1.jpg)
+
+---
+Customize PyCharm
+![](https://ddtrades.github.io/autotrade/img/py-2.jpg)
+
+---
+Close PyCharm
+![](https://ddtrades.github.io/autotrade/img/py-3.jpg)
+
+
+### First Python Program
+
+---
+Close PyCharm
+From your desktop Double-click on Pycharm shortcut to launch the Pycharm application.  And click on New Project
+
+---
+![](https://ddtrades.github.io/autotrade/img/pr-1.jpg)
+
+---
+![](https://ddtrades.github.io/autotrade/img/pr-2.jpg)
+
+---
+![](https://ddtrades.github.io/autotrade/img/pr-3.jpg)
+
+---
+![](https://ddtrades.github.io/autotrade/img/pr-4.jpg)
+
+---
+![](https://ddtrades.github.io/autotrade/img/pr-5.jpg)
+
+---
+![](https://ddtrades.github.io/autotrade/img/pr-6.jpg)
+
+---
+![](https://ddtrades.github.io/autotrade/img/pr-7.jpg)
+
+---
+Right click on tutorial folder and add a new file to the project.
+Name the file `lesson1.py`
+
+![](https://ddtrades.github.io/autotrade/img/pr-8.jpg)
+
 
 
 
