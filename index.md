@@ -16,3 +16,4 @@
 * Live Trade using SMA strategy
   * Minute Data
 
+[Next](https://ddtrades.github.io/autotrade/install_setup)
