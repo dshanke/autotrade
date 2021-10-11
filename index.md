@@ -1,8 +1,54 @@
-## Welcome to GitHub Pages
+# Workshop - TradingBot
 
-You can use the [editor on GitHub](https://github.com/ddtrades/autotrade/edit/gh-pages/index.md) to maintain and preview the content for your website in Markdown files.
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+## Agenda
+
+* Install & Setup
+* First Python Program
+* Get Data From Yahoo Finance
+* Backtest AAPL share trading using Yahoo Finance Data
+* Connect to IBKR TWS workstation
+* Get Data From IBKR
+  * Seconds Data
+  * Minute Data
+  * 10 Minute
+* First Live Trade - Buy/Sell Order
+* Live Trade using SMA strategy
+  * Minute Data
+
+
+
+## Install & Setup
+
+### Create workshop folders (where we wil install software and write our python code in)
+* Open cmd prompt (In windows search type cmd and press enter. a cmd terminal will open)
+* Type the following to create folder `algoworkshop\software`
+```shell
+cd %HOMEPATH%
+
+mkdir \a algoworkshop\software
+
+exit
+```
+
+### Download the following:
+* [Anaconda Python](https://repo.anaconda.com/archive/Anaconda3-2021.05-Windows-x86_64.exe)
+* [Pycharm Community Edition](https://www.jetbrains.com/pycharm/download/download-thanks.html?platform=windows&code=PCC)
+
+
+### Install Anaconda python package
+
+Double click on teh Anaconda package that you have downloaded and follow the step by step instructions as shown below
+
+
+
+### Download the following and extract the content to `%HOMEPATH%\algoworkshop` folder
+* [Backtrader zip package](https://ddtrades.github.io/autotrade/backtrader.zip)
+
+![](https://ddtrades.github.io/autotrade/img/a-1.jpg)
+
+
+
 
 ### Markdown
 
