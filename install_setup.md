@@ -5,7 +5,7 @@
 
 
 ### Create workshop folders (where we will install software and write our python code in)
-* Open cmd prompt (In windows search type cmd and press enter. a cmd terminal will open)
+* Open cmd prompt (In windows search type cmd and press enter. A cmd terminal will open)
 * Type the following to create folder `algoworkshop\software`
 
 ```

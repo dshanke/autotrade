@@ -7,6 +7,7 @@ Double-click on the Anaconda package that you have downloaded and follow the ste
 
 ---
 Step 1
+
 ![Step 1](https://ddtrades.github.io/autotrade/img/a-1.jpg)
 
 ---
