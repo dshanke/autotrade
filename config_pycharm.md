@@ -1,5 +1,8 @@
+[Home](https://ddtrades.github.io/autotrade/)
 
 ### Configure & Setup Pycharm with Anaconda
+[Previous](https://ddtrades.github.io/autotrade/install_pycharm)
+
 
 From your desktop Double-click on Pycharm shortcut to launch the Pycharm application.
 
@@ -19,4 +22,4 @@ Customize PyCharm
 Close PyCharm
 ![](https://ddtrades.github.io/autotrade/img/py-3.jpg)
 
-[Home](https://ddtrades.github.io/autotrade/) `algotradealgotradealgotradealgotrade` [Previous](https://ddtrades.github.io/autotrade/install_pycharm) `algotradealgotradealgotradealgotrade` [Next](https://ddtrades.github.io/autotrade/lesson1)
+[Next](https://ddtrades.github.io/autotrade/lesson1)

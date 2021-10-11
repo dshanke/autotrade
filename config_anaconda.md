@@ -1,4 +1,8 @@
+[Home](https://ddtrades.github.io/autotrade/)
+
 ### Configure Anaconda Environment
+[Previous](https://ddtrades.github.io/autotrade/install_anaconda)
+
 
 In your windows search bar type 'Anaconda Navigator' and click on it and follow the below steps:
 
@@ -25,4 +29,4 @@ Screen 5
 ![](https://ddtrades.github.io/autotrade/img/an-5.jpg)
 
 
-[Home](https://ddtrades.github.io/autotrade/) `algotradealgotradealgotradealgotrade` [Previous](https://ddtrades.github.io/autotrade/install_anaconda) `algotradealgotradealgotradealgotrade` [Next](https://ddtrades.github.io/autotrade/install_pycharm)
+[Next](https://ddtrades.github.io/autotrade/install_pycharm)
