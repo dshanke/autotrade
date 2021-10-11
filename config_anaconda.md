@@ -25,4 +25,4 @@ Screen 5
 ![](https://ddtrades.github.io/autotrade/img/an-5.jpg)
 
 
-[Home](https://ddtrades.github.io/autotrade/) [Previous](https://ddtrades.github.io/autotrade/install_anaconda) [Next](https://ddtrades.github.io/autotrade/install_pycharm)
+[Home](https://ddtrades.github.io/autotrade/) `algotradealgotradealgotradealgotrade` [Previous](https://ddtrades.github.io/autotrade/install_anaconda) `algotradealgotradealgotradealgotrade` [Next](https://ddtrades.github.io/autotrade/install_pycharm)

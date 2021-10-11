@@ -19,4 +19,4 @@ Customize PyCharm
 Close PyCharm
 ![](https://ddtrades.github.io/autotrade/img/py-3.jpg)
 
-[Home](https://ddtrades.github.io/autotrade/) [Previous](https://ddtrades.github.io/autotrade/install_pycharm) [Next](https://ddtrades.github.io/autotrade/lesson1)
+[Home](https://ddtrades.github.io/autotrade/) `algotradealgotradealgotradealgotrade` [Previous](https://ddtrades.github.io/autotrade/install_pycharm) `algotradealgotradealgotradealgotrade` [Next](https://ddtrades.github.io/autotrade/lesson1)

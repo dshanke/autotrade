@@ -29,4 +29,4 @@ Screen 6
 ![](https://ddtrades.github.io/autotrade/img/p-6.jpg)
 
 
-[Home](https://ddtrades.github.io/autotrade/) [Previous](https://ddtrades.github.io/autotrade/config_anaconda) [Next](https://ddtrades.github.io/autotrade/config_pycharm)
+[Home](https://ddtrades.github.io/autotrade/) `algotradealgotradealgotradealgotrade` [Previous](https://ddtrades.github.io/autotrade/config_anaconda) `algotradealgotradealgotradealgotrade` [Next](https://ddtrades.github.io/autotrade/config_pycharm)

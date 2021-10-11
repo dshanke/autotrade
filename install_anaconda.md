@@ -38,4 +38,4 @@ Screen 8
 Screen 9
 ![Step 9](https://ddtrades.github.io/autotrade/img/a-9.jpg)
 
-[Home](https://ddtrades.github.io/autotrade/) [Previous](https://ddtrades.github.io/autotrade/install_setup) [Next](https://ddtrades.github.io/autotrade/config_anaconda)
+[Home](https://ddtrades.github.io/autotrade/) `algotradealgotradealgotradealgotrade` [Previous](https://ddtrades.github.io/autotrade/install_setup) `algotradealgotradealgotradealgotrade` [Next](https://ddtrades.github.io/autotrade/config_anaconda)
