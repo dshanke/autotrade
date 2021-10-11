@@ -40,7 +40,8 @@ exit
 
 ### Install Anaconda python package
 
-Double-click on teh Anaconda package that you have downloaded and follow the step-by-step instructions as shown below:
+Double-click on the Anaconda package that you have downloaded and follow the step-by-step instructions as shown below:
+
 ![Step 1](https://ddtrades.github.io/autotrade/img/a-1.jpg)
 
 ![Step 2](https://ddtrades.github.io/autotrade/img/a-2.jpg)
