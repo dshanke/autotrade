@@ -1,4 +1,7 @@
+[Home](https://ddtrades.github.io/autotrade/)
+
 ### A few python concepts before we start with algo trading lessons
+[Previous](https://ddtrades.github.io/autotrade/lesson1)
 
 Trust me!
 Programming is easy.
@@ -188,3 +191,4 @@ what_should_i_do("green")
 
 ```
 
+[Next](https://ddtrades.github.io/autotrade/lesson3)
