@@ -9,27 +9,43 @@ Close PyCharm
 From your desktop Double-click on Pycharm shortcut to launch the Pycharm application.  And click on New Project
 
 ---
+Step 1
+
 ![](https://ddtrades.github.io/autotrade/img/pr-1.jpg)
 
 ---
+Step 2
+
 ![](https://ddtrades.github.io/autotrade/img/pr-2.jpg)
 
 ---
+Step 3
+
 ![](https://ddtrades.github.io/autotrade/img/pr-3.jpg)
 
 ---
+Step 4
+
 ![](https://ddtrades.github.io/autotrade/img/pr-4.jpg)
 
 ---
+Step 5
+
 ![](https://ddtrades.github.io/autotrade/img/pr-5.jpg)
 
 ---
+Step 6
+
 ![](https://ddtrades.github.io/autotrade/img/pr-6.jpg)
 
 ---
+Step 7
+
 ![](https://ddtrades.github.io/autotrade/img/pr-7.jpg)
 
 ---
+Step 8
+
 Right click on tutorial folder and add a new file to the project.
 Name the file `lesson1.py`
 
