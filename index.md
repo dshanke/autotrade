@@ -33,20 +33,36 @@ exit
 ```
 
 ### Download the following:
+
 * [Anaconda Python](https://repo.anaconda.com/archive/Anaconda3-2021.05-Windows-x86_64.exe)
 * [Pycharm Community Edition](https://www.jetbrains.com/pycharm/download/download-thanks.html?platform=windows&code=PCC)
 
 
 ### Install Anaconda python package
 
-Double click on teh Anaconda package that you have downloaded and follow the step by step instructions as shown below
+Double-click on teh Anaconda package that you have downloaded and follow the step-by-step instructions as shown below:
+![Step 1](https://ddtrades.github.io/autotrade/img/a-1.jpg)
 
+![Step 2](https://ddtrades.github.io/autotrade/img/a-2.jpg)
+
+![Step 3](https://ddtrades.github.io/autotrade/img/a-3.jpg)
+
+![Step 4](https://ddtrades.github.io/autotrade/img/a-4.jpg)
+
+![Step 5](https://ddtrades.github.io/autotrade/img/a-5.jpg)
+
+![Step 6](https://ddtrades.github.io/autotrade/img/a-6.jpg)
+
+![Step 7](https://ddtrades.github.io/autotrade/img/a-7.jpg)
+
+![Step 8](https://ddtrades.github.io/autotrade/img/a-8.jpg)
+
+![Step 9](https://ddtrades.github.io/autotrade/img/a-9.jpg)
 
 
 ### Download the following and extract the content to `%HOMEPATH%\algoworkshop` folder
 * [Backtrader zip package](https://ddtrades.github.io/autotrade/backtrader.zip)
 
-![](https://ddtrades.github.io/autotrade/img/a-1.jpg)
 
 
 
