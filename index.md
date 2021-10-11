@@ -42,38 +42,52 @@ exit
 
 Double-click on the Anaconda package that you have downloaded and follow the step-by-step instructions as shown below:
 
+
 ![Step 1](https://ddtrades.github.io/autotrade/img/a-1.jpg)
 
+---
 ![Step 2](https://ddtrades.github.io/autotrade/img/a-2.jpg)
 
+---
 ![Step 3](https://ddtrades.github.io/autotrade/img/a-3.jpg)
 
+---
 ![Step 4](https://ddtrades.github.io/autotrade/img/a-4.jpg)
 
+---
 ![Step 5](https://ddtrades.github.io/autotrade/img/a-5.jpg)
 
+---
 ![Step 6](https://ddtrades.github.io/autotrade/img/a-6.jpg)
 
+---
 ![Step 7](https://ddtrades.github.io/autotrade/img/a-7.jpg)
 
+---
 ![Step 8](https://ddtrades.github.io/autotrade/img/a-8.jpg)
 
+---
 ![Step 9](https://ddtrades.github.io/autotrade/img/a-9.jpg)
 
 ### Configure Anaconda Environment
 
 In your windows search bar type 'Anaconda Navigator' and click on it and follow the below steps:
 
+---
 ![](https://ddtrades.github.io/autotrade/img/an-1.jpg)
 
+---
 ![](https://ddtrades.github.io/autotrade/img/an-2.jpg)
 
+---
 ![](https://ddtrades.github.io/autotrade/img/an-3.jpg)
 
+---
 ![](https://ddtrades.github.io/autotrade/img/an-4.jpg)
 
 Wait for the creation to complete and then close it
 
+---
 ![](https://ddtrades.github.io/autotrade/img/an-5.jpg)
 
 
