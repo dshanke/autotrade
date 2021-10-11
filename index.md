@@ -42,31 +42,40 @@ exit
 
 Double-click on the Anaconda package that you have downloaded and follow the step-by-step instructions as shown below:
 
-
+---
+Screen 1
 ![Step 1](https://ddtrades.github.io/autotrade/img/a-1.jpg)
 
 ---
+Screen 2
 ![Step 2](https://ddtrades.github.io/autotrade/img/a-2.jpg)
 
 ---
+Screen 3
 ![Step 3](https://ddtrades.github.io/autotrade/img/a-3.jpg)
 
 ---
+Screen 4
 ![Step 4](https://ddtrades.github.io/autotrade/img/a-4.jpg)
 
 ---
+Screen 5
 ![Step 5](https://ddtrades.github.io/autotrade/img/a-5.jpg)
 
 ---
+Screen 6
 ![Step 6](https://ddtrades.github.io/autotrade/img/a-6.jpg)
 
 ---
+Screen 7
 ![Step 7](https://ddtrades.github.io/autotrade/img/a-7.jpg)
 
 ---
+Screen 8
 ![Step 8](https://ddtrades.github.io/autotrade/img/a-8.jpg)
 
 ---
+Screen 9
 ![Step 9](https://ddtrades.github.io/autotrade/img/a-9.jpg)
 
 ### Configure Anaconda Environment
@@ -74,20 +83,25 @@ Double-click on the Anaconda package that you have downloaded and follow the ste
 In your windows search bar type 'Anaconda Navigator' and click on it and follow the below steps:
 
 ---
+Screen 1
 ![](https://ddtrades.github.io/autotrade/img/an-1.jpg)
 
 ---
+Screen 2
 ![](https://ddtrades.github.io/autotrade/img/an-2.jpg)
 
 ---
+Screen 3
 ![](https://ddtrades.github.io/autotrade/img/an-3.jpg)
 
 ---
+Screen 4
 ![](https://ddtrades.github.io/autotrade/img/an-4.jpg)
 
 Wait for the creation to complete and then close it
 
 ---
+Screen 5
 ![](https://ddtrades.github.io/autotrade/img/an-5.jpg)
 
 
@@ -95,18 +109,30 @@ Wait for the creation to complete and then close it
 
 Double-click on the Pycharm package that you have downloaded and follow the step-by-step instructions as shown below:
 
+---
+Screen 1
 ![](https://ddtrades.github.io/autotrade/img/p-1.jpg)
 
 If Windows prompt you asking 'Do you want to allow this app to make changes to your device?' click Yes and proceed.
 
+---
+Screen 2
 ![](https://ddtrades.github.io/autotrade/img/p-2.jpg)
 
+---
+Screen 3
 ![](https://ddtrades.github.io/autotrade/img/p-3.jpg)
 
+---
+Screen 4
 ![](https://ddtrades.github.io/autotrade/img/p-4.jpg)
 
+---
+Screen 5
 ![](https://ddtrades.github.io/autotrade/img/p-5.jpg)
 
+---
+Screen 6
 ![](https://ddtrades.github.io/autotrade/img/p-6.jpg)
 
 
