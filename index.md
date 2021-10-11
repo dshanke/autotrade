@@ -203,7 +203,11 @@ Doing this will execute the python program. This program prints `Hello TRADERS!`
 
 ![](https://ddtrades.github.io/autotrade/img/pr-8.jpg)
 
+To those who have never written a program before 
+*Congratulations!!* 
+You have just written your first python program.
 
+To those more experienced a little more patience and we will soon start our algo trading lessons.
 
 
 
