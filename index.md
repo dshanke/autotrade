@@ -60,6 +60,26 @@ Double-click on the Anaconda package that you have downloaded and follow the ste
 
 ![Step 9](https://ddtrades.github.io/autotrade/img/a-9.jpg)
 
+### Configure Anaconda Environment
+
+In your windows search bar type 'Anaconda Navigator' and click on it and follow the below steps:
+
+![](https://ddtrades.github.io/autotrade/img/an-1.jpg)
+
+![](https://ddtrades.github.io/autotrade/img/an-2.jpg)
+
+![](https://ddtrades.github.io/autotrade/img/an-3.jpg)
+
+![](https://ddtrades.github.io/autotrade/img/an-4.jpg)
+
+Wait for the creation to complete and then close it
+
+![](https://ddtrades.github.io/autotrade/img/an-5.jpg)
+
+
+
+
+
 
 ### Download the following and extract the content to `%HOMEPATH%\algoworkshop` folder
 * [Backtrader zip package](https://ddtrades.github.io/autotrade/backtrader.zip)
