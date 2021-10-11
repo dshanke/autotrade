@@ -30,7 +30,7 @@ This will open up the python console which looks like shown below:
 # if line starts with # it is a single line comment
 
 """
-multiline comments are embedded within """
+multiline comments are embedded within triple quotes
 this is line 1
 this is line 2
 this is line 3
