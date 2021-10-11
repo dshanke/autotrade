@@ -19,3 +19,4 @@ exit
 * [Anaconda Python](https://repo.anaconda.com/archive/Anaconda3-2021.05-Windows-x86_64.exe)
 * [Pycharm Community Edition](https://www.jetbrains.com/pycharm/download/download-thanks.html?platform=windows&code=PCC)
 
+[Home](https://ddtrades.github.io/autotrade/) [Next](https://ddtrades.github.io/autotrade/install_anaconda)
