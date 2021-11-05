@@ -95,7 +95,7 @@ print(b)
 print(b[2])
 print(b[3])
 
-#list of decimal numbers (in python is is known as flot
+#list of decimal numbers (in python decimal number is known as float)
 c = [ 10.25, 65.81, 45.23, 9.07]
 print(c[0])
 print(c[2])
@@ -128,7 +128,7 @@ for number in c:
   print("number is: ", number)
   
 
-#another way to roint
+#another way to print
 for number in c:
   print(f"number is: {number}")
 
@@ -144,8 +144,8 @@ for number in c:
 * Function in python 
   * Think of it as a book library. 
   * Anybody who has access to the library can borrow a book, read the book and then return it back to the library
-  * If a book already exist then you do not need to write the exactly same thing
-function is similar in nature. Once a programmer writes a function, he can use the function any number of times as long he has access to that function.
+  * If a book already exist then you do not need to write the exactly same thing.  
+ A function is similar in nature. Once a programmer writes a function, he can use the function any number of times as long he has access to that function.
 
 ```
 def print_hello():
@@ -155,9 +155,9 @@ print_hello()
 ```
 
 If you write a function you are the owner, and you can invoke it from your program by calling it as shown above.
-However, is the function is written by someone else, and you would like to use it then you will need to import the function into your program before you can use it.
+However, if the function is written by someone else, and you would like to use it then you will need to import the function into your program before you can use it.
 How do we do that? Simply using an import statement.
-As an example if you waht to print the date & time of your system then you can use the datetime module.
+As an example if you want to print the date & time of your system then you can use the datetime module.
 Let's see how we can do that?
 
 ```

@@ -54,14 +54,14 @@ Name the file `lesson1.py`
 Type following in the file and save the file:
 
 ```
-print("hello traders")
+print("Hello TRADERS!")
 ```
 
 Right Click anywhere in the file, and select `Run 'lesson1'`
 
 Doing this will execute the python program. This program prints `Hello TRADERS!` on output terminal as shown in image.
 
-![](https://ddtrades.github.io/autotrade/img/pr-8.jpg)
+![](https://ddtrades.github.io/autotrade/img/pr-9.jpg)
 
 To those who have never written a program before
 *Congratulations!!*
