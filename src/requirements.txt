@@ -1,0 +1,15 @@
+numpy>=1.15
+lxml>=4.5.1
+multitasking>=0.0.7
+pandas>=0.24
+requests>=2.20
+python-dateutil>=2.7.3
+pytz>=2017.3
+six>=1.5
+charset-normalizer~=2.0.0
+urllib3>=1.21.1
+certifi>=2017.4.17
+idna>=2.5
+yfinance==0.1.63
+backtrader==1.9.76.123
+plotting==0.0.7
