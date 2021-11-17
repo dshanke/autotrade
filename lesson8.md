@@ -1,8 +1,8 @@
-[Home](https://ddtrades.github.io/autotrade/)
+[Home](index.html)
 
 ### Live Trading - Interactive Brokers
 
-[Previous](https://ddtrades.github.io/autotrade/lesson7)
+[Previous](lesson7.html)
 
 #### Download and InstallTWS Software
 
@@ -10,15 +10,15 @@ Download [TWS for Windows](https://download2.interactivebrokers.com/installers/t
 
 Right click on the downloaded file and click on `Run as administrator`
 
-![](https://ddtrades.github.io/autotrade/img/ib-1.png)  
+![](img/ib-1.png)  
 
-![](https://ddtrades.github.io/autotrade/img/ib-2.png)
+![](img/ib-2.png)
 
-![](https://ddtrades.github.io/autotrade/img/ib-3.png)
+![](img/ib-3.png)
 
-![](https://ddtrades.github.io/autotrade/img/ib-4.png)
+![](img/ib-4.png)
 
-![](https://ddtrades.github.io/autotrade/img/ib-5.png)
+![](img/ib-5.png)
 
 
 #### Configure TWS for API access
@@ -26,11 +26,11 @@ Launch TWS (if not already open) & follow the below shown steps:
 
 Login to IBKR TWS application. Make sure you select **Paper Trading** account.
 
-![](https://ddtrades.github.io/autotrade/img/ibc-1.png)
+![](img/ibc-1.png)
 
-![](https://ddtrades.github.io/autotrade/img/ibc-2.png)
+![](img/ibc-2.png)
 
-![](https://ddtrades.github.io/autotrade/img/ibc-3.png)
+![](img/ibc-3.png)
 
 
 #### Program to access Forex Data from IBKR
@@ -88,4 +88,4 @@ def run_main():
 run_main()
 
 ```
-[Next](https://ddtrades.github.io/autotrade/lesson9)
+[Next](lesson9.html)

@@ -1,8 +1,8 @@
-[Home](https://ddtrades.github.io/autotrade/)
+[Home](index.html)
 
 ### Fetching Financial data from Yahoo
 
-[Previous](https://ddtrades.github.io/autotrade/lesson2)
+[Previous](lesson2.html)
 
 #### Install & setup some python libraries
 
@@ -36,14 +36,14 @@ The above command will take about 2-5 minutes to complete.
 What we are doing here installing a set of python libraries that we are going to use.
 
 Next, download the following zip package
-* [backtrader zip package](https://ddtrades.github.io/autotrade/backtrader.zip)
+* [backtrader zip package](backtrader.zip)
 
 Extract the zip file.
 The zip file contains a folder by name `backtrader`.  
 
 Copy this `backtrader` folder under location `%HOMEPATH%\algoworkshop\tutorials`.
 
-![](https://ddtrades.github.io/autotrade/img/y1.jpg)
+![](img/y1.jpg)
 
 
 ### Get Yahoo finance data - ***Our first financial program***
@@ -68,4 +68,4 @@ data.to_csv('spy.csv')
 
 Do you now see a `spy.csv` file in your tutorial's folder?
 
-[Next](https://ddtrades.github.io/autotrade/lesson4)
+[Next](lesson4.html)

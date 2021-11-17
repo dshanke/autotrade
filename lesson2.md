@@ -1,7 +1,7 @@
-[Home](https://ddtrades.github.io/autotrade/)
+[Home](index.html)
 
 ### A few python concepts before we start with algo trading lessons
-[Previous](https://ddtrades.github.io/autotrade/lesson1)
+[Previous](lesson1.html)
 
 Trust me!
 Programming is easy.
@@ -20,7 +20,7 @@ In our first program `print` was a function. It is responsible for printing the 
 Let's use Python Console to quickly go over some Python concepts. In PyCharm application, using the Menu on Top click on `Tools -> Python or Debug Console`
 This will open up the python console which looks like shown below:
 
-![](https://ddtrades.github.io/autotrade/img/pr1.jpg)
+![](img/pr1.jpg)
 
 
 
@@ -199,4 +199,4 @@ what_should_i_do("green")
 
 ```
 
-[Next](https://ddtrades.github.io/autotrade/lesson3)
+[Next](lesson3.html)

@@ -1,7 +1,7 @@
-[Home](https://ddtrades.github.io/autotrade/)
+[Home](index.html)
 
 ## Install & Setup
-[Previous](https://ddtrades.github.io/autotrade/)
+[Previous](index.html)
 
 
 ### Create workshop folders (where we will install software and write our python code in)
@@ -23,4 +23,4 @@ exit
 
 Open the Downloads folder and follow instructions on next page. 
 
-[Next](https://ddtrades.github.io/autotrade/install_anaconda)
+[Next](install_anaconda.html)

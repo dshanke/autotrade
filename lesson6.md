@@ -1,8 +1,8 @@
-[Home](https://ddtrades.github.io/autotrade/)
+[Home](index.html)
 
 ### Program - First Buy/Sell backtrader trading strategy applied on historical data.
 
-[Previous](https://ddtrades.github.io/autotrade/lesson5)
+[Previous](lesson5.html)
 
 #### Define your strategy in layman terms
 
@@ -71,4 +71,4 @@ run_main()
 You can run this strategy on your favourite tickers.
 How does your chart look? Did you make profit or loss?
 
-[Next](https://ddtrades.github.io/autotrade/lesson7)
+[Next](lesson7.html)

@@ -1,8 +1,8 @@
-[Home](https://ddtrades.github.io/autotrade/)
+[Home](index.html)
 
 ### Program - Another strategy - Favourite one -  Golden Crossover strategy
 
-[Previous](https://ddtrades.github.io/autotrade/lesson6)
+[Previous](lesson6.html)
 
 #### Define your strategy in layman terms
 * Define your fast moving average(fastSMA) and slow moving average(slowSMA)
@@ -78,4 +78,4 @@ If you observe closely there are vey minor changes in this program when compared
 You can run this strategy on your favourite tickers.
 How does your chart look? Did you make profit or loss?
 
-[Next](https://ddtrades.github.io/autotrade/lesson8)
+[Next](lesson8.html)

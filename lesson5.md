@@ -1,8 +1,8 @@
-[Home](https://ddtrades.github.io/autotrade/)
+[Home](index.html)
 
 #### Introduction - `backtrader` framework & use it to fetch and analyse pricing data to derive information   
 
-[Previous](https://ddtrades.github.io/autotrade/lesson4)
+[Previous](lesson4.html)
 
 ###### Introducing bactktrader framework - Understanding the framework & flow of steps
 
@@ -162,4 +162,4 @@ run_main()
 
 The program fetches historical price & using the backtrader library and detects if we are in an uptrend or downtrend (in layman terms).
 
-[Next](https://ddtrades.github.io/autotrade/lesson6)
+[Next](lesson6.html)

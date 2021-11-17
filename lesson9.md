@@ -1,8 +1,8 @@
-[Home](https://ddtrades.github.io/autotrade/)
+[Home](index.html)
 
 ### Live Trading - Interactive Brokers - Futures
 
-[Previous](https://ddtrades.github.io/autotrade/lesson8)
+[Previous](lesson8.html)
 
 #### Strategy based Futures Trading 
 Create a file under `tutorials` folder and name it as `07.backtrader_live_trading_with_ibkr_futures.py`
@@ -87,4 +87,4 @@ def run_main():
 
 run_main()
 ```
-[Home](https://ddtrades.github.io/autotrade/)
+[Home](index.html)

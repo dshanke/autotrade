@@ -1,8 +1,8 @@
-[Home](https://ddtrades.github.io/autotrade/)
+[Home](index.html)
 
 ### Program - Get historical prices this time using the `backtrader` library and plot a price chart.
 
-[Previous](https://ddtrades.github.io/autotrade/lesson3)
+[Previous](lesson3.html)
 
 #### What is [backtrader](https://www.backtrader.com/)?
 
@@ -53,4 +53,4 @@ run_main()
 
 The program will fetch the historical price using the backtrader library and will plot a price chart.
 
-[Next](https://ddtrades.github.io/autotrade/lesson5)
+[Next](lesson5.html)
