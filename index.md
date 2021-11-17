@@ -1,4 +1,5 @@
-# Workshop - TradingBot             - author: dshanke
+# Workshop - TradingBot             
+##### **github: [dshanke](https://github.com/ddtrades/autotrade/tree/gh-pages)**
 
 ***Note: This workshop has been intentionally designed with commented code and some errors. ***
 ***I will walk you through the flow and explanantions while we execute each and every backtesting and live trades.***
