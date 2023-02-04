@@ -12,10 +12,11 @@
 
 Let's see the Implementation.
 
-Create a file under `tutorials` folder and name it as `04.backtrader_simple_buy_sell_strategy.py`
+Create a file under `tutorials` folder and name it as `04a.backtrader_simple_buy_sell_strategy.py`
 
 ```python
 import datetime as dt
+import yfinance as yf
 import backtrader as bt
 
 # conception -> birth -> childhood -> adulthood -> death
@@ -55,7 +56,8 @@ def run_main():
     cerebro.addstrategy(MyStrategy)
     print(f"Starting Value: {cerebro.broker.get_value()}")
 
-    data = bt.feeds.YahooFinanceData(dataname="AAPL",fromdate=fromDate,todate=toDate)
+    ticker = "SPY"
+    data = bt.feeds.PandasData(dataname=yf.download(ticker, start=fromDate,end=toDate))
 
     # Passing Price Data to cerebro
     # cerebro.adddata(data)
