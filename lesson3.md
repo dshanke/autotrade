@@ -12,7 +12,7 @@ Create a file under your `tutorials` folder and name it as `requirements.txt`
 numpy>=1.15
 lxml>=4.5.1
 multitasking>=0.0.7
-pandas>=0.24
+pandas==1.3.5
 requests>=2.20
 python-dateutil>=2.7.3
 pytz>=2017.3
@@ -21,7 +21,7 @@ charset-normalizer~=2.0.0
 urllib3>=1.21.1
 certifi>=2017.4.17
 idna>=2.5
-yfinance==0.1.63
+yfinance
 plotting==0.0.7
 IbPy2
 ```
