@@ -17,6 +17,7 @@ Create a file under `tutorials` folder and name it as `02.backtrader_get_price_d
 ```python
 import datetime as dt
 import backtrader as bt
+import yfinance as yf
 
 def run_main():
     print("hello from run_main")
@@ -29,8 +30,7 @@ def run_main():
     # cerebro.broker.setcash(100000)
     # print(f"Starting Value: {cerebro.broker.get_value()}")
     # 
-    # data = bt.feeds.YahooFinanceCSVData(dataname="spy.csv",fromdate=fromDate,todate=toDate)
-    # #data = bt.feeds.YahooFinanceData(dataname="SPY",fromdate=fromDate,todate=toDate)
+    # data = bt.feeds.PandasData(dataname=yf.download("SPY",fromdate=fromDate,todate=toDate))
     # 
     # # Passing Price Data to cerebro
     # # cerebro.adddata(data)
