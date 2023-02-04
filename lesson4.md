@@ -1,3 +1,20 @@
+[Home](index.html)
+
+### Program - Get historical prices this time using the `backtrader` library and plot a price chart.
+
+[Previous](lesson3.html)
+
+#### What is [backtrader](https://www.backtrader.com/)?
+
+It is a feature-rich Python framework for back-testing and live trading.  
+`backtrader` allows you to focus on writing reusable trading strategies, indicators and analyzers instead of having to spend time building infrastructure.
+
+Simply put it is a user-friendly library that you can use to write trading programs.
+
+Let's proceed to write a program that will fetch the same historical data for SPY ticker using the backtrader library. 
+
+Create a file under `tutorials` folder and name it as `02.backtrader_get_price_data_plot_price_chart`
+```python
 import datetime as dt
 import backtrader as bt
 import yfinance as yf
@@ -35,3 +52,8 @@ def run_main():
     # cerebro.plot(style='bar', numfigs=1, volume=True)
 
 run_main()
+```
+
+The program will fetch the historical price using the backtrader library and will plot a price chart.
+
+[Next](lesson5.html)
