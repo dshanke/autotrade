@@ -254,6 +254,6 @@ Final Value: {cerebro.broker.get_value():,.2f}, Quantity: {cerebro.broker.getpos
 ClosePrice: {final_close_price:,.2f}, Cash In hand: {cerebro.broker.get_cash():,.2f}""")
 
     # # Plotting a chart
-    # cerebro.plot(style='bar', numfigs=1, volume=True)
+    cerebro.plot(style='bar', numfigs=1, volume=True)
 
 run_main()
