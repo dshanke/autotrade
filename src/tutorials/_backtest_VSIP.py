@@ -9,6 +9,8 @@ import argparse
 from operator import attrgetter
 from dateutil.relativedelta import relativedelta
 
+# python3 _backtest_VSIP.py --ticker NIFTYBEES.NS --duration 5 --start 2011-01-01 --end 2022-12-31 --cash 2500000
+
 ticker = 'SPY'
 initial_cash = 2500000
 last_n_years = 10
@@ -201,10 +203,11 @@ class MyStrategy(bt.Strategy):
         print(text)
 
 def run_main():
-    global ticker, last_n_years
+    global ticker, last_n_years, initial_cash
 
     parser = argparse.ArgumentParser()
-    parser.add_argument('--ticker', type=str, required=False, help="Ticket symbol: e.g. SPY, NIFTYBEES.NS", nargs='?', const="NIFTYBEES.NS")
+    parser.add_argument('--cash', type=int, required=False, help="Money allocated for this strategy", nargs='?', const=100000)
+    parser.add_argument('--ticker', type=str, required=True, help="Ticket symbol: e.g. SPY, NIFTYBEES.NS", nargs='?', const="NIFTYBEES.NS")
     parser.add_argument('--start', type=str, required=False, help="From date in YYYY-MM-DD format")
     parser.add_argument('--end', type=str, required=False, help="To date in YYYY-MM-DD format")
     parser.add_argument('--duration', type=int, required=False, help="Duration - last x years. If -f,-t is specified duration is ignored", nargs='?', const=10)
@@ -212,6 +215,8 @@ def run_main():
 
     if args.ticker:
         ticker = args.ticker
+    if args.cash:
+        initial_cash = args.cash
 
     if args.start and args.end:
         toDate = dt.datetime.strptime(args.end, "%Y-%m-%d")
