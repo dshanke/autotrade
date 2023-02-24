@@ -9,6 +9,8 @@ import argparse
 from operator import attrgetter
 from dateutil.relativedelta import relativedelta
 
+from util.logger import Logger
+
 # python3 _backtest_VSIP.py --ticker NIFTYBEES.NS --duration 5 --start 2011-01-01 --end 2022-12-31 --cash 2500000
 
 ticker = 'SPY'
@@ -18,27 +20,8 @@ enable_log = False
 final_close_price = -1
 dip_percentage = 0.98
 target_profit_percentage = 1.01
-
-class Logger:
-    __instance = None
-    
-    @staticmethod
-    def instance():
-        if Logger.__instance == None:
-            Logger()
-        return Logger.__instance
-    
-    def __init__(self):
-        if Logger.__instance != None:
-            raise Exception("This class is a singleton!")
-        else:
-            global enable_log
-            self.enabled = enable_log
-            Logger.__instance = self
-    
-    def log(self, message):
-        if self.enabled:
-            print(message)
+max_lots = 3
+my_account_holding = None
 
 class Holding:
     def __init__(self, cost_price, quantity):
@@ -69,13 +52,14 @@ class Holding:
 
 class AccountHolding:
     def __init__(self):
+        global max_lots
         self.my_holdings = [ ]
-        self.max_holding = 5
+        self.max_lots = max_lots
         self.logger = Logger.instance()
     
     def how_much_cash_to_invest_for_new_purchase(self, available_cash):
-        how_many_lots_can_we_still_purchase = self.max_holding - len(self.my_holdings)
-        self.logger.log(f'available_cash: {available_cash}, lots:{how_many_lots_can_we_still_purchase}')
+        how_many_lots_can_we_still_purchase = self.max_lots - len(self.my_holdings)
+        self.logger.log(f'available_cash: {available_cash}, lots:{how_many_lots_can_we_still_purchase}, max_lots:{self.max_lots}')
         return available_cash / how_many_lots_can_we_still_purchase
 
 
@@ -111,7 +95,7 @@ class AccountHolding:
             return close_price < h.is_nice_price_to_buy_again(h.get_cost_price())
 
     def can_hold_more(self):
-        return len(self.my_holdings) < self.max_holding
+        return len(self.my_holdings) < self.max_lots
 
     def add_holding(self, cost_price, quantity):
         if self.can_hold_more():
@@ -129,8 +113,7 @@ class AccountHolding:
                 continue
             new_holdings.append(h)
         self.my_holdings = new_holdings
-        
-my_account_holding = AccountHolding()
+
 
 # conception -> birth -> childhood -> adulthood -> death
 # init -> start -> prenext -> next -> stop
@@ -161,21 +144,24 @@ class MyStrategy(bt.Strategy):
 
     def next(self):
         # self.log_data()
-        global my_account_holding, final_close_price
+        global my_account_holding, final_close_price, initial_cash
 
         final_close_price = self.dataclose[0]
 
         if my_account_holding.can_we_buy(self.dataclose[0]):
-            cash_for_purchase = my_account_holding.how_much_cash_to_invest_for_new_purchase(0.90 * self.broker.get_cash())
+            # cash_for_purchase = my_account_holding.how_much_cash_to_invest_for_new_purchase(0.95 * self.broker.get_cash())
+            cash_for_purchase = my_account_holding.how_much_cash_to_invest_for_new_purchase(0.95 * initial_cash)
+
+            
             buy_qty = math.floor(cash_for_purchase / self.data)
             self.buy(size=buy_qty)
-            self.log(f'BUY, {buy_qty}, {self.dataclose[0]:,.2f}')
+            self.log(f'BUY, {self.dataclose[0]:,.2f}, {buy_qty}')
             my_account_holding.add_holding(self.dataclose[0], buy_qty)
         
         sell_qty = my_account_holding.anything_to_sell(self.dataclose[0])
         if sell_qty > 0:
             self.sell(size=sell_qty)
-            self.log(f'SELL, {sell_qty}, {self.dataclose[0]:,.2f}')
+            self.log(f'SELL, {self.dataclose[0]:,.2f}, {sell_qty}')
             my_account_holding.release_holding(sell_qty)
 
     # def notify_order(self, order):
@@ -203,20 +189,34 @@ class MyStrategy(bt.Strategy):
         print(text)
 
 def run_main():
-    global ticker, last_n_years, initial_cash
+    global ticker, last_n_years, initial_cash, max_lots, my_account_holding, dip_percentage, target_profit_percentage
 
     parser = argparse.ArgumentParser()
+    parser.add_argument('--td', type=float, required=False, help="Sell target price percent", nargs='?', const=1.01)
+    parser.add_argument('--tp', type=float, required=False, help="Sell dip price percent", nargs='?', const=0.98)
     parser.add_argument('--cash', type=int, required=False, help="Money allocated for this strategy", nargs='?', const=100000)
+    parser.add_argument('--lots', type=int, required=False, help="Max lots from allocated cash.", nargs='?', const=5)
     parser.add_argument('--ticker', type=str, required=True, help="Ticket symbol: e.g. SPY, NIFTYBEES.NS", nargs='?', const="NIFTYBEES.NS")
     parser.add_argument('--start', type=str, required=False, help="From date in YYYY-MM-DD format")
     parser.add_argument('--end', type=str, required=False, help="To date in YYYY-MM-DD format")
     parser.add_argument('--duration', type=int, required=False, help="Duration - last x years. If -f,-t is specified duration is ignored", nargs='?', const=10)
+    parser.add_argument('--chart', type=bool, required=False, help="Show chart if specified.", nargs='?', const=False)
     args = parser.parse_args()
 
     if args.ticker:
         ticker = args.ticker
     if args.cash:
         initial_cash = args.cash
+    if args.td:
+        dip_percentage = args.td
+    if args.tp:
+        target_profit_percentage = args.tp
+    show_chart = args.chart
+    if args.lots:
+        print(f'ml: {args.lots}')
+        max_lots = args.lots
+    print(max_lots)
+
 
     if args.start and args.end:
         toDate = dt.datetime.strptime(args.end, "%Y-%m-%d")
@@ -228,6 +228,9 @@ def run_main():
             last_n_years = args.duration
         toDate = dt.date.today();
         fromDate = toDate - relativedelta(years=last_n_years)
+
+    my_account_holding = AccountHolding()
+
 
     # Create a cerebro entity - think of it is as your Car's Engine
     cerebro = bt.Cerebro()
@@ -254,6 +257,7 @@ Final Value: {cerebro.broker.get_value():,.2f}, Quantity: {cerebro.broker.getpos
 ClosePrice: {final_close_price:,.2f}, Cash In hand: {cerebro.broker.get_cash():,.2f}""")
 
     # # Plotting a chart
-    cerebro.plot(style='bar', numfigs=1, volume=True)
+    if show_chart:
+        cerebro.plot(style='bar', numfigs=1, volume=True)
 
 run_main()
