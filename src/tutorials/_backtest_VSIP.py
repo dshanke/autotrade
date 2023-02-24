@@ -149,19 +149,19 @@ class MyStrategy(bt.Strategy):
         final_close_price = self.dataclose[0]
 
         if my_account_holding.can_we_buy(self.dataclose[0]):
-            # cash_for_purchase = my_account_holding.how_much_cash_to_invest_for_new_purchase(0.95 * self.broker.get_cash())
-            cash_for_purchase = my_account_holding.how_much_cash_to_invest_for_new_purchase(0.95 * initial_cash)
+            cash_for_purchase = my_account_holding.how_much_cash_to_invest_for_new_purchase(0.95 * self.broker.get_cash())
+            #cash_for_purchase = my_account_holding.how_much_cash_to_invest_for_new_purchase(0.95 * initial_cash)
 
             
             buy_qty = math.floor(cash_for_purchase / self.data)
             self.buy(size=buy_qty)
-            self.log(f'BUY, {self.dataclose[0]:,.2f}, {buy_qty}')
+            self.log(f'BUY, {self.dataclose[0]:,.2f}, {buy_qty}, {(self.dataclose[0] * buy_qty):,.2f}')
             my_account_holding.add_holding(self.dataclose[0], buy_qty)
         
         sell_qty = my_account_holding.anything_to_sell(self.dataclose[0])
         if sell_qty > 0:
             self.sell(size=sell_qty)
-            self.log(f'SELL, {self.dataclose[0]:,.2f}, {sell_qty}')
+            self.log(f'SELL, {self.dataclose[0]:,.2f}, {sell_qty}, {(self.dataclose[0] * sell_qty):,.2f}')
             my_account_holding.release_holding(sell_qty)
 
     # def notify_order(self, order):
