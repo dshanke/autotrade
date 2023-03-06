@@ -12,6 +12,8 @@ ticker = 'SPY'
 last_n_years = 10
 initial_cash = 2500000
 final_close_price = -1
+profit_percentage = 1.02
+cash_for_purchase = 20000
 
 # python3 _backtest_VSIP.py --ticker NIFTYBEES.NS --duration 5 --start 2011-01-01 --end 2022-12-31 --cash 2500000
 
@@ -38,8 +40,9 @@ class DailyBuySellProfitStrategy(bt.Strategy):
         self.previous_close_price = None
         self.total_unit_holding = 0
         self.total_amt = 0
-        self.profit_percentage = 1.01
-        self.cash_for_purchase = 10000
+        global profit_percentage, cash_for_purchase
+        self.profit_percentage = profit_percentage
+        self.cash_for_purchase = cash_for_purchase
 
     def start(self):
         self.val_start = self.broker.get_cash()
@@ -51,7 +54,7 @@ class DailyBuySellProfitStrategy(bt.Strategy):
         return self.get_current_profit_loss_percent(current_price) * 0.4
 
     def get_current_profit_loss_percent(self, current_price):
-        return (self.get_current_value(current_price) - self.total_amt) / self.total_amt
+        return 0 if self.total_amt == 0 else (self.get_current_value(current_price) - self.total_amt) / self.total_amt
     
     def is_profitting(self, current_price):
         return (self.profit_percentage * self.total_amt) < (self.get_current_value(current_price))
@@ -66,6 +69,7 @@ class DailyBuySellProfitStrategy(bt.Strategy):
             self.sell(size=self.total_unit_holding)
             self.log(f'SELL, {self.dataclose[0]:,.2f}, {self.total_unit_holding}')
             self.total_unit_holding = 0
+            self.total_amt = 0
         else:
             buy_factor = 0 if self.previous_close_price == None else self.get_buy_factor(final_close_price)
             buy_amt = self.cash_for_purchase + (buy_factor * self.cash_for_purchase)
@@ -89,7 +93,7 @@ class DailyBuySellProfitStrategy(bt.Strategy):
 
 
 
-# python3 _backtest_VSIP.py --ticker NIFTYBEES.NS --duration 5 --start 2011-01-01 --end 2022-12-31 --cash 2500000
+# python3 _backtest_BuyDaily_SellOnProfit.py --ticker NIFTYBEES.NS --duration 1 --cash 1000000 --start 2020-01-01 --end 2020-12-31 | tail -1
 
 def run_main():
     parser = argparse.ArgumentParser()
@@ -141,9 +145,10 @@ def run_main():
     cerebro.run()
 
     # print(cerebro.broker.getposition(data))
+    final_value = cerebro.broker.get_value()
 
     print(f"""Ticker: {ticker}, Initial Cash: {initial_cash:,.2f}, \
-Final Value: {cerebro.broker.get_value():,.2f}, Quantity: {cerebro.broker.getposition(data).size}, \
+Final Value: {final_value:,.2f}, Profit/Loss%: {100*(final_value-initial_cash)/initial_cash:,.2f}, Quantity: {cerebro.broker.getposition(data).size}, \
 ClosePrice: {final_close_price:,.2f}, Cash In hand: {cerebro.broker.get_cash():,.2f}""")
 
     # # Plotting a chart
