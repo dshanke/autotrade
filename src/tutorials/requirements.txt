@@ -13,3 +13,4 @@ idna>=2.5
 yfinance==0.1.63
 plotting==0.0.7
 IbPy2
+pip install nsepython

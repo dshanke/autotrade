@@ -13,3 +13,4 @@ idna>=2.5
 yfinance==0.1.63
 backtrader==1.9.76.123
 plotting==0.0.7
+nsepython

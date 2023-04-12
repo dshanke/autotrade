@@ -90,9 +90,6 @@ class DailyBuySellProfitStrategy(bt.Strategy):
             str(self.data.low[0]), str(self.data.close[0]), str(self.data.volume[0]))
         print(text)
 
-
-
-
 # python3 _backtest_BuyDaily_SellOnProfit.py --ticker NIFTYBEES.NS --duration 1 --cash 1000000 --start 2020-01-01 --end 2020-12-31 | tail -1
 
 def run_main():

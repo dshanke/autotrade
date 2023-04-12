@@ -2,3 +2,6 @@ build/html/
 __pycache__
 *.pyc
 *.pyo
+pyenv*
+.DS_Store
+*.csv
